@@ -1,0 +1,30 @@
+#include <winver.h>
+
+1 24 "@CMAKE_CURRENT_SOURCE_DIR@/profmig.manifest"
+
+1 VERSIONINFO
+FILEVERSION @PROJECT_VERSION_MAJOR@,@PROJECT_VERSION_MINOR@,@PROJECT_VERSION_PATCH@,0
+PRODUCTVERSION @PROJECT_VERSION_MAJOR@,@PROJECT_VERSION_MINOR@,@PROJECT_VERSION_PATCH@,0
+FILEFLAGSMASK 0x3fL
+FILEFLAGS 0x0L
+FILEOS 0x40004L
+FILETYPE 0x1L
+FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0C0A04B0"
+        BEGIN
+            VALUE "FileDescription", "profmig - migracion de perfiles de Windows a un dominio nuevo"
+            VALUE "FileVersion", "@PROJECT_VERSION@"
+            VALUE "InternalName", "profmig"
+            VALUE "OriginalFilename", "profmig.exe"
+            VALUE "ProductName", "profmig"
+            VALUE "ProductVersion", "@PROJECT_VERSION@"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0C0A, 1200
+    END
+END

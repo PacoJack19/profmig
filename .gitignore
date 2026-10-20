@@ -1,0 +1,32 @@
+# Compilacion y paquetes (se regeneran con cmake / package.ps1; los paquetes van a las "Releases", no al repositorio)
+build/
+build-*/
+dist/
+*.zip
+*.sha256
+*.obj
+*.o
+*.exe
+
+# Registros e informes de equipos reales: contienen nombres de usuarios, equipos y dominios
+*.log
+tools/*.txt
+tools/*.csv
+*.CSV
+diag_*.txt
+hkcu_shell_*.txt
+gp_*.txt
+scan_*.txt
+compare_profiles.txt
+
+# Estado local de profmig y copias de registro
+ucpd_state.txt
+*.reg
+
+# Editores y sistema
+.vs/
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini

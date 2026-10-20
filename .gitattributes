@@ -1,0 +1,10 @@
+# Normaliza los finales de linea en el repositorio; los scripts de Windows se sacan con CRLF
+* text=auto
+*.ps1 text eol=crlf
+*.cpp text
+*.hpp text
+*.md text
+*.in text
+*.rc text
+*.manifest text
+*.txt text
